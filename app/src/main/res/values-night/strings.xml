@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="description_of_task">Описание задачи</string>
+    <string name="add_new_task">Новая задача</string>
+</resources>

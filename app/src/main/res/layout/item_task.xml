@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="#FFFFFF"
+    android:clipChildren="true"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="start|center_vertical">
+
+        <!-- CheckBox -->
+        <CheckBox
+            android:id="@+id/checkBoxTask"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="12dp"
+            android:buttonTint="@color/black"
+            android:importantForAccessibility="yes"/>
+
+        <!-- Контейнер с текстом -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textViewTaskTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/name_of_task"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:importantForAccessibility="yes"/>
+
+                <TextView
+                    android:id="@+id/categoryBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="8dp"
+                    android:visibility="gone"
+                    android:background="@drawable/category_badge_background"
+                    tools:text="Работа"
+                    tools:visibility="visible"
+                    android:importantForAccessibility="no"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewTaskDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/description_of_task"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:visibility="gone"
+                android:importantForAccessibility="no"/>
+
+            <!-- Deadline -->
+            <TextView
+                android:id="@+id/tvDeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="11sp"
+                android:textColor="#FF9800"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:visibility="gone"/>
+
+            <!-- 🏷️ Теги -->
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/tagsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:chipSpacing="4dp"
+                app:singleLine="false" />
+
+        </LinearLayout>
+
+        <!-- Кнопка удаления -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_delete"
+            app:tint="@color/black"
+            android:contentDescription="@string/delete"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Кнопка таймера -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnTimer"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_timer"
+            app:tint="@color/black"
+            android:contentDescription="@string/timer"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Кнопка редактирования -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnEdit"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_edit"
+            app:tint="@color/black"
+            android:contentDescription="@string/edit"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="background_light">#121212</color>
+    <color name="card_background">#1F1F1F</color>
+    <color name="text_secondary">#B0B0B0</color>
+    <color name="fab_red">#F87171</color>
+    <color name="gradient_start">#232536</color>
+    <color name="gradient_end">#363252</color>
+    <color name="icon_add">#FFFFFF</color>
+    <color name="text_primary">#F3F4F6</color>
+    <color name="colorSurface">#FF0000</color>
+    <color name="colorOnSurface">#FFFFFF</color>
+    <color name="colorPrimary">#BB86FC</color>
+    <color name="colorOnPrimary">#000000</color>
+</resources>
