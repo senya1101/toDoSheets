@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LightDatePicker" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="materialCalendarStyle">@style/LightCalendarStyle</item>
+        <item name="materialCalendarTheme">@style/LightCalendarTheme</item>
+    </style>
+
+    <style name="LightCalendarTheme" parent="Theme.Material3.Light">
+        <item name="colorSurface">@android:color/white</item>
+        <item name="colorOnSurface">@android:color/black</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+    <style name="LightCalendarStyle" parent="Widget.MaterialComponents.MaterialCalendar">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+</resources>
